@@ -1,6 +1,11 @@
 h1{
     color: blueviolet;
+    font-family: 'Times New Roman', Times, serif;
 }
 p{
     color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+    font-size: medium;
 }
