@@ -13,6 +13,10 @@ header h1{
 ul.ul2{
     color: darkgreen;
 }
+.bigger{
+    font-size: 15pt;
+    font-weight: bold;
+}
 /*Using IDs*/
 #maintitle{
     color:darkcyan;
