@@ -17,6 +17,9 @@ ul.ul2{
     font-size: 15pt;
     font-weight: bold;
 }
+.orange{
+    color: orangered;
+}
 /*Using IDs*/
 #maintitle{
     color:darkcyan;
