@@ -9,7 +9,7 @@ p{
 header h1{
     color:cadetblue;
 }
-/*For classes*/
+/*For classes. tag.class is used for specificity*/
 ul.ul2{
     color: darkgreen;
 }
