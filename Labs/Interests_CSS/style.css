@@ -40,11 +40,11 @@ main{
     font-size: medium;
 }
 nav{
-    background-color: rgb(164, 231, 209);
+    background-color: rgba(164, 231, 209, 0.395);
 }
 /*Emphasize with color contrast and de-emphasize with color*/
 /*At least 1 ID, 1 class, and 1 span tag*/
 span{
     color: darkslategrey;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.422);
 }
