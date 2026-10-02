@@ -6,5 +6,29 @@ h1{
 p {
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
-    color: mediumorchid;
+    color: black;
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+/*Set a new default font, font color, and font size for the full page*/
+/*For colors choose one to grab attention, deflect attention, and background color*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:cornsilk ;
+    font-size: large;
+}
+main{
+    background-color:rgb(255, 233, 162);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+nav{
+    background-color: mediumaquamarine;
+}
+/*Emphasize with color contrast and deemphasize with color*/
+/*At least 1 ID, 1 class, and 1 span tag*/
