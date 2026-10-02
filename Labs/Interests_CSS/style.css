@@ -1,10 +1,19 @@
 h1{
     font-family: 'Courier New', Courier, monospace;
-    color: darkgreen;
+    color: darkolivegreen;
     font-size: larger;
+}
+.div-area{
+    font-size: medium;
+    color:rgb(197, 168, 71);
+}
+.div-words{
+    color:rgb(183, 150, 43);
+    font-size: small;
 }
 h3{
     font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(238, 202, 84);
     color: darkgreen;
     font-size: larger; 
 }
@@ -18,16 +27,21 @@ p {
     color: darkolivegreen;
     font-size: small;
 }
-ul{
+#style_ul{
     list-style-type: none;
     margin: 0;
     display: flex;
     gap: 20px;
 }
+.ul-basic{
+    list-style-type: none;
+    margin: 0;
+    gap: 20px;
+}
 /*Set a new default font, font color, and font size for the full page*/
 /*For colors choose one to grab attention, deflect attention, and background color*/
 .separator-color{
-    background-color:rgba(247, 220, 112, 0.683);
+    background-color:rgba(247, 220, 112, 0.395);
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -41,10 +55,14 @@ main{
 }
 nav{
     background-color: rgba(164, 231, 209, 0.395);
+    font-size: smaller;
 }
 /*Emphasize with color contrast and de-emphasize with color*/
 /*At least 1 ID, 1 class, and 1 span tag*/
 span{
     color: darkslategrey;
     background-color: rgba(255, 255, 255, 0.422);
+}
+dt{
+    color: rgb(195, 116, 12);
 }
