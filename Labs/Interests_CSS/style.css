@@ -3,10 +3,20 @@ h1{
     color: darkgreen;
     font-size: larger;
 }
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkgreen;
+    font-size: larger; 
+}
 p {
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     color: black;
+}
+#description_p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkolivegreen;
+    font-size: small;
 }
 ul{
     list-style-type: none;
@@ -30,5 +40,9 @@ main{
 nav{
     background-color: mediumaquamarine;
 }
-/*Emphasize with color contrast and deemphasize with color*/
+/*Emphasize with color contrast and de-emphasize with color*/
 /*At least 1 ID, 1 class, and 1 span tag*/
+span{
+    color: darkslategrey;
+    background-color: white;
+}
