@@ -13,6 +13,11 @@ main{
     background: url('redFlowerSmall.png') no-repeat center;    
 }
 
+.surfspots{
+    list-style-image: url('dot.png');
+}
+
+/*Extra stuff for classes*/
 .other{
     background-image:url('bluebg.jpg'); /*Getting an image as a background*/
     background-color: blue;
