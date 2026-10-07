@@ -1,0 +1,28 @@
+/*Editing a photo in css*/
+.pipeline{
+    width: 250px;
+}
+
+body{/*For background image and color, you can decide where to put it with the selector*/
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('bluebg.jpg') no-repeat blue;/*Shortcut property for the above*/
+    color: aliceblue;
+}
+
+main{
+    background: url('redFlowerSmall.png') no-repeat center;    
+}
+
+.other{
+    background-image:url('bluebg.jpg'); /*Getting an image as a background*/
+    background-color: blue;
+    background-repeat:no-repeat;/*Stops the background from repeating across the whole page*/
+    color: aliceblue;
+}
+
+.moreother{
+    background-image: url(redFlowerSmall.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
