@@ -2,27 +2,28 @@
 .pipeline{
     width: 250px;
 }
-
+img{
+    width: 400px;
+}
 body{/*For background image and color, you can decide where to put it with the selector*/
     font-family: Arial, Helvetica, sans-serif;
-    background: url('bluebg.jpg') no-repeat blue;/*Shortcut property for the above*/
+    background-image:url('bluebg.jpg'); /*Getting an image as a background*/
+    background-color: blue;
+    background-repeat:no-repeat;/*Stops the background from repeating across the whole page*/
     color: aliceblue;
 }
 
-main{
-    background: url('redFlowerSmall.png') no-repeat center;    
+header{
+    background: url('redFlowerSmall.png') no-repeat center;
 }
 
-.surfspots{
+.uldots{
     list-style-image: url('snowballBullet.png');
 }
 
 /*Extra stuff for classes*/
 .other{
-    background-image:url('bluebg.jpg'); /*Getting an image as a background*/
-    background-color: blue;
-    background-repeat:no-repeat;/*Stops the background from repeating across the whole page*/
-    color: aliceblue;
+    background: url('bluebg.jpg') no-repeat blue;/*Shortcut property for the above*/
 }
 
 .moreother{
