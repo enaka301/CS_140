@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("david-brooke-martin-lFTtQqVfx6g-unsplash.jpg");
+    background-image: url("Cherry.jpg");
     color: whitesmoke;
 }
 nav{
@@ -13,3 +13,4 @@ nav{
     list-style-image: url("snowballBullet.png");
 }
 /*For pictures, 400px to 800px*/
+/*For background use a width of 800*/
