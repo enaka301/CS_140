@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("gavin-li-sN45P3gK7mY-unsplash.jpg");
+}
+nav{
+    color: green;
+}
+.current{
+    color: magenta;
+}
+.unordered{
+    list-style-image: url("snowballBullet.png");
+}
+/*For pictures, 400px to 800px*/
