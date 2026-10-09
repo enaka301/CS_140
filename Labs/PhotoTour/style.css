@@ -4,8 +4,9 @@ body{
     background-position: right;
     background-repeat: no-repeat;
     background-color: black;
+    color: whitesmoke;
 }
-header{
+/* header{
     color: whitesmoke;
 }
 main{
@@ -13,7 +14,7 @@ main{
 }
 footer{
     color: whitesmoke;
-}
+} */
 nav{
     color: green;
 }
