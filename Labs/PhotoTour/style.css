@@ -4,6 +4,14 @@ body{
     background-position: right;
     background-repeat: no-repeat;
     background-color: black;
+}
+header{
+    color: whitesmoke;
+}
+main{
+    color: whitesmoke;
+}
+footer{
     color: whitesmoke;
 }
 nav{
