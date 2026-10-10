@@ -1,7 +1,7 @@
 /*Had to look up how to add spacing for footer and header so that the bg image can be seen*/
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /*Tried using shortcut but it broke my image*/
+    /*Tried using background shortcut but it broke my image*/
     background-image: url("Cherry.jpg");
     background-position: right top -80px;
     background-repeat: no-repeat;
