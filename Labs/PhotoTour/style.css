@@ -23,7 +23,7 @@ header{
 footer{
     text-align: center;
     font-size: small;
-    padding-top: -80px;
+    margin-top: -80px;
     margin: 0;
     position: fixed;
     left: 0;
