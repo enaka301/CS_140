@@ -1,0 +1,17 @@
+.p1{
+    /*width: 50px;*/
+    /*content can overflow outside the box*/
+    /*Use larger pixels*/
+    width: 250px;
+    height: 300px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkolivegreen;
+}
+.p2{
+   padding: 40px; 
+}
+.p3{
+    margin: 500px;
+}
