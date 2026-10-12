@@ -4,6 +4,9 @@
     /*Use larger pixels*/
     width: 250px;
     height: 300px;
+    /*height not used as much*/
+    overflow: scroll;
+    /*In the case were the content is to large, use scroll to make the box scrollable*/
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
