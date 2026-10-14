@@ -5,6 +5,36 @@ body{
 h1{
     font-family: 'Times New Roman', Times, serif;
 }
+dd{
+    color: darkblue;
+}
+.overflow{
+    border: 2px solid black;
+    width: 150px;
+    overflow: hidden;
+}
+.small{
+    width: 100%;
+}
+.enforcer{
+    clear: both;
+}
 .float{
     float: right;
+    clear: right;
+}
+.relative{
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
