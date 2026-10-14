@@ -19,6 +19,9 @@ dd{
 .enforcer{
     clear: both;
 }
+.buttons{
+    /*Add buttons for nav*/
+}
 #float{
     float: right;
     clear: right;
