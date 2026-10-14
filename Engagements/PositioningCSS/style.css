@@ -19,21 +19,21 @@ dd{
 .enforcer{
     clear: both;
 }
-.float{
+#float{
     float: right;
     clear: right;
 }
-.relative{
+#relative{
     position: relative;
     top: 20px;
     left: 40px;
 }
-.fixed{
+#fixed{
     position: fixed;
     bottom: 0;
     right: 0;
 }
-.absolute{
+#absolute{
     position: absolute;
     top: 0;
     right: 0;
