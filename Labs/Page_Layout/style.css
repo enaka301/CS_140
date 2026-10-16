@@ -10,6 +10,7 @@ main{
     width: 900px;/*Writting side to side on the phone*/
     margin: 0 auto;
     border: thin solid black;
+    border-radius: 20%;
     /* box-shadow: 10px 10px; */
 }
 nav a{
@@ -17,7 +18,8 @@ nav a{
     padding: 10px 10px;
     background-color: rgba(255, 0, 0, 0.703);
     color: white;
-    margin-left: 100px;   
+    margin-left: 100px;
+    margin-right: 100px;  
 }
 nav a:hover{ /*Psuedoclass*/
     background-color: red;
