@@ -2,15 +2,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: blue;
 }
-main{
+main h2{
     border: thin solid black;
+    display: block;
+}
+.prop{
+    color: darkolivegreen;
 }
 #wrapper{
     background-color: aliceblue;
     width: 900px;/*Writting side to side on the phone*/
     margin: 0 auto;
     border: thin solid black;
-    border-radius: 20%;
     /* box-shadow: 10px 10px; */
 }
 nav a{
@@ -27,7 +30,12 @@ nav a:hover{ /*Psuedoclass*/
 figure{
     float: left;
 }
+figure img{
+    border: thick solid black;
+    border-radius: 20%;
+}
 h2{
+    display:block;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
     text-align: center;
@@ -37,4 +45,14 @@ h2{
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: medium;
+}
+header{
+    background-image: url("../PhotoTour/Photos/Rocks.jpg");
+    background-clip: border-box;
+    box-shadow: 5px 5px;
+    background-origin: padding-box;
+    background-color: white;
+}
+header h1{
+    color:white;
 }
