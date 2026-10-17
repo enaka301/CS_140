@@ -56,3 +56,6 @@ header{
 header h1{
     color:white;
 }
+figcaption{
+    margin: 0 auto;
+}
