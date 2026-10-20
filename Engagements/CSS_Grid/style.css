@@ -10,6 +10,15 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
+.child{
+    border: 1px solid #000;
+    box-shadow: 4px 4px 0px rgba(94, 172, 118, 0.5);
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
 dt{
     color: green;
 }
