@@ -1,6 +1,16 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    display: block;
+    padding: 5px 10px;
+    background-color: darkgreen;
+    color: azure;
+}
 .card{
     border: 2px solid black;
     padding: 5px;
