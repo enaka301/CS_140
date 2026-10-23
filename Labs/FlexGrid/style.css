@@ -1,16 +1,33 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 1px 10px;
+}
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 5px 5px 5px;
 }
 nav a{
     display: block;
-    padding: 5px 10px;
+    padding: 1px 10px;
     background-color: darkgreen;
     color: azure;
+    margin: 0;
 }
+/*Make this Flex*/
 .card{
     border: 2px solid black;
     padding: 5px;
@@ -22,7 +39,7 @@ nav a{
     flex-wrap: wrap;
     /*flex-direction: row-reverse;*/
 }
-/*Make these as Grid*/
+/*Make these as Grid in columns*/
 .child{
     border: 2px solid black;
     padding: 10px;
@@ -34,4 +51,14 @@ nav a{
     gap: 10px;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+}
+/*Footer will use grid*/
+.extra{
+    padding: 10px;
+    width: 10px;
+}
+.mount{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
