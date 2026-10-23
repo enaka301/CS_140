@@ -4,10 +4,28 @@ body{
 h1{
     margin: 0;
 }
-h2{
-    margin: 0;
+/*For aside*/
+aside .container{
+    display: flex;
+    flex-direction: column;
 }
-p{
+.maincontent{
+    flex-grow: 1;
+}
+aside h2{
+    margin: 1px;
+    font-size: small;
+}
+aside .details{
+    width:auto;
+    margin: 1px;
+}
+aside .details p{
+    margin: 0;
+    font-size: smaller;
+}
+/**/
+main p{
     margin: 0;
 }
 header{
@@ -26,18 +44,6 @@ nav a{
     background-color: darkgreen;
     color: azure;
     margin: 0;
-}
-/*Make this Flex*/
-.card{
-    border: 2px solid black;
-    padding: 5px;
-    width: 150px;
-}
-.container{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    /*flex-direction: row-reverse;*/
 }
 /*Make these as Grid in columns*/
 .child{
@@ -60,6 +66,6 @@ nav a{
     padding-top: 25px;
     display: grid;
     gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5,1fr);
     justify-content: space-evenly;
 }
