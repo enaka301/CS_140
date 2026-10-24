@@ -10,9 +10,6 @@ aside.container{
     flex: 0 0 200px;
     flex-direction: column;
 }
-/* .maincontent{
-    flex-grow: 1;
-} */
 aside h2{
     margin: 1px;
     font-size: small;
@@ -25,15 +22,17 @@ aside .details p{
     margin: 0;
     font-size: smaller;
 }
-/**/
+/* Main content */
 main p{
     margin: 0;
 }
+/* Header */
 header{
     background-color: black;
     color: white;
     padding: 1px 10px;
 }
+/* Nav bar */
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -47,17 +46,20 @@ nav a{
     margin: 0;
 }
 /*Make these as Grid in columns*/
-.children{
+/* Used in aside and the div next to it */
+.children{ /*For images*/
     flex: 1;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
+/* div section */
 .cards{
     border: 2px solid black;
     padding: 10px;
     box-shadow: 2px 2px 2px;
 }
+/* Literal parent div */
 .parent{
     display: flex;
     gap: 10px;
@@ -68,6 +70,7 @@ nav a{
 .extra{
     width: 1px;
 }
+/* used to space the links evenly */
 .mount{
     padding-top: 25px;
     display: grid;
