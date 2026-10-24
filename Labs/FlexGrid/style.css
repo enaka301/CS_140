@@ -5,19 +5,20 @@ h1{
     margin: 0;
 }
 /*For aside*/
-aside .container{
+aside.container{
     display: flex;
+    flex: 0 0 200px;
     flex-direction: column;
 }
-.maincontent{
+/* .maincontent{
     flex-grow: 1;
-}
+} */
 aside h2{
     margin: 1px;
     font-size: small;
 }
 aside .details{
-    width:auto;
+    width: auto;
     margin: 1px;
 }
 aside .details p{
@@ -39,24 +40,29 @@ nav{
     margin: 5px 5px 5px;
 }
 nav a{
-    display: block;
+    display: flex;
     padding: 1px 10px;
     background-color: darkgreen;
     color: azure;
     margin: 0;
 }
 /*Make these as Grid in columns*/
-.child{
+.children{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.cards{
     border: 2px solid black;
     padding: 10px;
-    width: 100px;
     box-shadow: 2px 2px 2px;
 }
 .parent{
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+    align-items: flex-start;
+    /* flex-direction: column; */
 }
 /*Footer will use grid*/
 .extra{
