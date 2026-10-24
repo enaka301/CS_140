@@ -4,24 +4,6 @@ body{
 h1{
     margin: 0;
 }
-/*For aside*/
-aside.container{
-    display: flex;
-    flex: 0 0 200px;
-    flex-direction: column;
-}
-aside h2{
-    margin: 1px;
-    font-size: small;
-}
-aside .details{
-    width: auto;
-    margin: 1px;
-}
-aside .details p{
-    margin: 0;
-    font-size: smaller;
-}
 /* Main content */
 main p{
     margin: 0;
@@ -44,6 +26,24 @@ nav a{
     background-color: darkgreen;
     color: azure;
     margin: 0;
+}
+/*For aside*/
+aside.container{
+    display: flex;
+    flex: 0 0 200px;
+    flex-direction: column;
+}
+aside h2{
+    margin: 1px;
+    font-size: small;
+}
+aside .details{
+    width: auto;
+    margin: 1px;
+}
+aside .details p{
+    margin: 0;
+    font-size: smaller;
 }
 /*Make these as Grid in columns*/
 /* Used in aside and the div next to it */
