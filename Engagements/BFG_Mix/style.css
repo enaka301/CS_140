@@ -80,7 +80,10 @@ main{
 @media print{
     /* Only applies when we print */
     nav{display: none;}
+    header{display: none;}
     .sidbar{display: none;}
+    main h2{display: none;}
+    header{display: none;}
     body{font-family: 'Courier New', Courier, monospace;}
     .card{break-inside: avoid;}
 }
