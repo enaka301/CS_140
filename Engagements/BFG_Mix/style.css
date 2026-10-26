@@ -82,6 +82,7 @@ main{
     nav{display: none;}
     header{display: none;}
     .sidbar{display: none;}
+    .sidebar h3{display: none;}
     main h2{display: none;}
     header{display: none;}
     body{font-family: 'Courier New', Courier, monospace;}
