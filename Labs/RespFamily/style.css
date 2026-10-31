@@ -51,7 +51,12 @@ header h1{
     /* background-color: rgb(201, 210, 244); */
     width: 20%;
 }
-.sidebar h3{
+.sidebar h2{
+    font-size: medium;
+    margin: 0;
+}
+main h3{
+    font-size: large;
     margin: 0;
 }
 main{
@@ -94,6 +99,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding-top: 9px;
 }
 
 @media ONLY screen AND (max-width: 644px){ /* If the width of the screen is more than 790 do this*/
