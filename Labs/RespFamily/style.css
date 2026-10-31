@@ -4,6 +4,9 @@ body{
     margin: 0;
     background-color: #fff243af;
 }
+footer{
+    text-align: center;
+}
 html{
     margin: 0;
 }
@@ -67,6 +70,7 @@ main{
 }
 .card img {
     width: 100%;
+    height: auto;
 }
 .card h4{
     text-align: center;
@@ -98,8 +102,13 @@ main{
         align-items: center;
         width: 100%;
     }
-    .sidbar{
+    .sidebar{
         width: 100%;
+    }
+    .sidebar-contents{
+        width: 100%;
+        margin-right: auto;
+        text-overflow: wrap;
     }
     main{
         width: 100%;
@@ -134,7 +143,7 @@ main{
     nav{display: none;}
     header{display: none;}
     footer{display: none;}
-    .sidbar{display: none;}
+    .sidebar{display: none;}
     .mainrow .sidebar h3{display: none;}
     main h2{display: none;}
     body{font-family: 'Courier New', Courier, monospace;}
