@@ -17,63 +17,82 @@
     </nav>
     <main>
         <table border="1">
-            <tr>
-                <th>Department</th>
-                <th>Course Number</th>
-                <th>Title</th>
-                <th>Location</th>
-                <th>Time</th>
-                <th>Credits</th>
-            </tr>
-            <tr>
-                <th colspan="6">Fall 2026</th>
-            </tr>
-            <tr>
-                <td rowspan="3">CS</td>
-                <td>140</td>
-                <td>Web Design</td>
-                <td>P2</td>
-                <td>11am</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>235</td>
-                <td>Assembly</td>
-                <td>MARB</td>
-                <td>10am</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>236</td>
-                <td>Discrete Math</td>
-                <td>ECB</td>
-                <td>1pm</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <th colspan="6">Winter 2027</th>
-            </tr>
-            <tr>
-                <td>REL A</td>
-                <td>250</td>
-                <td>Old Testament</td>
-                <td>Library</td>
-                <td>8am</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>ART</td>
-                <td>101</td>
-                <td>Music in the 1800s</td>
-                <td>Music Hall</td>
-                <td>11am</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <th colspan="5">Total Credits</th>
-                <td>15</td>
-            </tr>
+            <caption>General Schedule for CS Students</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Course Number</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="6" scope="col">Fall 2026</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>P2</td>
+                    <td>11am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>235</td>
+                    <td>Assembly</td>
+                    <td>MARB</td>
+                    <td>10am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>236</td>
+                    <td>Discrete Math</td>
+                    <td>ECB</td>
+                    <td>1pm</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="6" scope="col">Winter 2027</th>
+                </tr>
+                <tr>
+                    <td>REL A</td>
+                    <td>250</td>
+                    <td>Old Testament</td>
+                    <td>Library</td>
+                    <td>8am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ART</td>
+                    <td>101</td>
+                    <td>Music in the 1800s</td>
+                    <td>Music Hall</td>
+                    <td>11am</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" scope="col">Total Credits</th>
+                    <td>15</td>
+                </tr>
+            </tfoot>
         </table>
+        <dl>
+            <dt>When do you use a table?</dt>
+            <dd>Use a table to display information for things such as a menu, course catalog, schedule, etc. Use it for organizing items or content into a table.</dd>
+            <dt>When do you not use a table?</dt>
+            <dd>Things such as brochures, books, shopping sites, and web pages that display a lot of pictures would not need a table. I'd like to think that a table is to help the user get info quickly, not draw them in.</dd>
+            <dt>When do you need to do extra work for table accessibility?</dt>
+            <dd>When a table has complex content or things that people with screen readers may find difficult to read, extra work is needed.</dd>
+            <dt>Which question you asked AI today helped you learn the most, and why?</dt>
+            <dd>The question about how to expand the cells was the most helpful to me. Layout of cells is way different in styling.</dd>
+            <dt>Did AI ever try to give you more than you asked for, like writing your code? What did you do?</dt>
+            <dd>Sometimes the AI would quiz me to test my knowledge and continue to quiz me. Other times it would give code that was not originally in the prompt.</dd>
+        </dl>
     </main>
     <footer>&copy;2026 Enoch</footer>
 </body>
