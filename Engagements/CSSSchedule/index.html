@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule with CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Class Schedule</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <table id="schedule">
+            <caption>General Schedule for CS Students</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Dept.</th>
+                    <th scope="col">Course #</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="6" scope="col">Fall 2026</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>P2</td>
+                    <td>11am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>235</td>
+                    <td>Assembly</td>
+                    <td>MARB</td>
+                    <td>10am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>236</td>
+                    <td>Discrete Math</td>
+                    <td>ECB</td>
+                    <td>1pm</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="6" scope="col">Winter 2027</th>
+                </tr>
+                <tr>
+                    <td>REL A</td>
+                    <td>250</td>
+                    <td>Old Testament</td>
+                    <td>Library</td>
+                    <td>8am</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>ART</td>
+                    <td>101</td>
+                    <td>Music in the 1800s</td>
+                    <td>Music Hall</td>
+                    <td>11am</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" scope="col">Total Credits</th>
+                    <td>15</td>
+                </tr>
+            </tfoot>
+        </table>
+        <dl>
+            <dt>Why don't we use the border attribute?</dt>
+            <dd>Since CSS is availble, "border" became ineffective and not usable.</dd>
+            <dt>What is the easiest way to color every other row a different color?</dt>
+            <dd></dd>
+            <dt>When do you need to do extra work for table accessibility?</dt>
+            <dd></dd>
+        </dl>
+    </main>
+    <footer>&copy;2026 Enoch</footer>
+</body>
+</html>
