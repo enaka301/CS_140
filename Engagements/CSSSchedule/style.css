@@ -2,13 +2,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Use the comma to select tags */
+table{
+    background-color: #7A7A7A;
+}
 #schedule, th, td{
     border: 1px solid black;
-    border-collapse: separate; /*Changes how cells space themeselves with other cells*/
+    border-collapse: collapse; /*Changes how cells space themeselves with other cells*/
     border-spacing: 5px; /*In separate, spaces are made wider. In collapse nothing occurs*/
 }
 #schedule td{
-    vertical-align: top;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+    
 }
 #schedule th{
     background-color: #B10C2D;
@@ -16,4 +22,10 @@ body{
 }
 caption{
     caption-side: bottom;
+}
+#schedule tbody td:last-child{
+    text-align: right;
+}
+#schedule tbody tr:nth-child(even) td{
+    background-color: lightskyblue;
 }
