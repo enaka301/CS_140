@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#stats{
+    background-color: transparent;
+    background-color: burlywood;
+}
+#stats, th, td{
+    border: 1px solid black;
+    border-collapse: separate; /*Changes how cells space themeselves with other cells*/
+    border-spacing: 10px; /*In separate, spaces are made wider. In collapse nothing occurs*/
+    text-align: center;
+}
+caption{
+    text-align: auto;
+}
+#stats th{
+    background-color: royalblue;
+    color: white;
+}
+#stats tbody tr:nth-child(odd){
+    background-color: rgb(188, 194, 200);
+}
+#stats tbody tr:nth-child(even){
+    background-color: white;
+}
+#stats .row-header{
+    background-color: rgb(159, 159, 249);
+    color: white;
+}
+#stats th{
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.sidebar h2{
+    font-size: medium;
+    margin: 0;
+}
+main{
+    width: 70%;
+    padding-left: 60px;
+
+}
