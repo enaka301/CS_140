@@ -11,9 +11,6 @@ body{
     border-spacing: 10px; /*In separate, spaces are made wider. In collapse nothing occurs*/
     text-align: center;
 }
-caption{
-    text-align: auto;
-}
 #stats th{
     background-color: royalblue;
     color: white;
