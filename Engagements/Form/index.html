@@ -16,12 +16,85 @@
         <a href="#">Contact</a>
     </nav>
     <main>
+        <div class="form-container">
+            <!-- Wrapping contents around a figure/div tag can help structure the input fields of the form -->
+            <form action="formprocessing.html" method="get">
+                <div class="form-row">
+                    <label for="personname">Full Name:</label>
+                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="personemail">Email:</label>
+                    <input id="personemail" type="text" name="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="personpassword">Password:</label>
+                    <input id="personpassword" type="password" name="pass" placeholder="Password">
+                </div>
+                <div class="form-row">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="select-container">
+            <label for="school">Select a School:</label>
+            <select name="schools" id="school">
+                <option value="BYU Hawaii">BYU Hawaii</option>
+                <option value="UH Manoa">UH Manoa</option>
+                <option value="Chaminade">Chaminade</option>
+                <option value="Hawaii Pacific">Hawaii Pacific</option>
+            </select>
+        </div>
+        <br>
+        <div class="radio-container">
+            <fieldset>
+                <legend>Select your means of transportation:</legend>
+                <input type="radio" value="bus" name="bus" id="bus">
+                <label for="bus">Bus</label>
+                <input type="radio" value="boat" name="boat" id="boat">
+                <label for="boat">Boat</label>
+                <input type="radio" value="car" name="car" id="car">
+                <label for="car">Car</label>
+                <input type="radio" value="plane" name="plane" id="plane">
+                <label for="plane">Plane</label>
+            </fieldset>
+        </div>
+        <br>
+        <div class="checkbox-container">
+            <fieldset>
+                <legend>Select your majors:</legend>
+                <div class="check-row">
+                    <input type="checkbox" id="coding" name="major" value="coding">
+                    <label for="coding">Coding</label>
+                </div>
+                <div class="check-row">
+                    <input type="checkbox" id="english" name="major" value="english">
+                    <label for="english">English</label>
+                </div>
+                <div class="check-row">
+                    <input type="checkbox" id="bio" name="major" value="bio">
+                    <label for="bio">Bio</label>
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        <div class="textarea-container">
+            <label for="message">Your message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
         <div>
             <h2>Questions and Answers</h2>
             <dl>
-                <dt></dt>
+                <dt>The form tag has an "action" attribute. What does it do?</dt>
                 <dd></dd>
-                <dt></dt>
+                <dt>The form tag has a "method" attribute. What does it do?</dt>
+                <dd></dd>
+                <dt>What is the difference between a "POST" and a "GET"?</dt>
+                <dd></dd>
+                <dt>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</dt>
+                <dd></dd>
+                <dt>List all the form controls that HTML5 added. Which ones did you put in your form?</dt>
                 <dd></dd>
             </dl>
         </div>
