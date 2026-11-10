@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-row">
                     <label for="personemail">Email:</label>
-                    <input id="personemail" type="text" name="email" placeholder="Email">
+                    <input id="personemail" type="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-row">
                     <label for="personpassword">Password:</label>
@@ -87,15 +87,37 @@
             <h2>Questions and Answers</h2>
             <dl>
                 <dt>The form tag has an "action" attribute. What does it do?</dt>
-                <dd></dd>
+                <dd>Action processes the form and it's contents serverside.</dd>
                 <dt>The form tag has a "method" attribute. What does it do?</dt>
-                <dd></dd>
+                <dd>Method is for http methods. This is usually GET and POST methods.</dd>
                 <dt>What is the difference between a "POST" and a "GET"?</dt>
-                <dd></dd>
+                <dd>GET sends the data directly to the url. POST sends the data through the http data instead of the url. It is more safe than GET because nothing is exposed in the url.</dd>
                 <dt>How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.</dt>
-                <dd></dd>
+                <dd>
+                    <ul>
+                        <li>Text Box</li>
+                        <li class="bullet">To pre-set a value use the "value" attribute to send actual data. Placeholder is used to hint the user on what to type.</li>
+                        <li>Text Area</li>
+                        <li class="bullet">A pre-set value is usually what is automatically submitted by default. A placeholder attribute holds the value to display in the text box.</li>
+                        <li>Select Box</li>
+                        <li class="bullet">Pre-set values is made by putting "selected" in the tag area for an &lt;option&gt; tag. After some research, Select Box does not have a placeholder.</li>
+                        <li>Check Box</li>
+                        <li class="bullet">Like the select box, the check box does not have a placeholder value tag. But it does have a pre-set value by using the "checked" attribute which acts as a boolean.</li>
+                        <li>Radio Button</li>
+                        <li class="bullet">Just like the check box, "checked" can be used for the radio button. It does not have a placeholder attribute.</li>
+                    </ul>
+                    In conclusion, a pre-set value is the default display for a value and a placeholder is the hint for the user.
+                </dd>
                 <dt>List all the form controls that HTML5 added. Which ones did you put in your form?</dt>
-                <dd></dd>
+                <dd> I used:
+                    <ul>
+                        <li>text</li>
+                        <li>email</li>
+                        <li>password</li>
+                        <li>checkbox</li>
+                        <li>radio</li>
+                    </ul>
+                </dd>
             </dl>
         </div>
     </main>
