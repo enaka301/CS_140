@@ -16,8 +16,8 @@
         <a href="#">Contact</a>
     </nav>
     <main>
-        <div class="form-container">
-            <!-- Wrapping contents around a figure/div tag can help structure the input fields of the form -->
+        <fieldset>
+            <legend>Account Creation</legend>
             <form action="formprocessing.html" method="get">
                 <div class="form-row">
                     <label for="personname">Full Name:</label>
@@ -28,74 +28,64 @@
                     <input id="personemail" type="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-row">
+                    <label for="bdate">Birthdate:</label>
+                    <input id="bdate" type="date" name="bdate">
+                </div>
+                <div class="form-row">
                     <label for="personpassword">Password:</label>
                     <input id="personpassword" type="password" name="pass" placeholder="Password">
                 </div>
-                <div class="form-row">
-                    <input type="submit">
-                </div>
             </form>
-        </div>
-        <br>
-        <div class="select-container">
-            <label for="school">Select a School:</label>
-            <select name="schools" id="school">
-                <option value="BYU Hawaii">BYU Hawaii</option>
-                <option value="UH Manoa">UH Manoa</option>
-                <option value="Chaminade">Chaminade</option>
-                <option value="Hawaii Pacific">Hawaii Pacific</option>
-            </select>
-        </div>
-        <br>
-        <div class="radio-container">
-            <fieldset>
-                <legend>Select your means of transportation:</legend>
-                <input type="radio" value="bus" name="bus" id="bus">
-                <label for="bus">Bus</label>
-                <input type="radio" value="boat" name="boat" id="boat">
-                <label for="boat">Boat</label>
-                <input type="radio" value="car" name="car" id="car">
-                <label for="car">Car</label>
-                <input type="radio" value="plane" name="plane" id="plane">
-                <label for="plane">Plane</label>
-            </fieldset>
-        </div>
-        <br>
-        <div class="checkbox-container">
-            <fieldset>
-                <legend>Select your majors:</legend>
-                <div class="check-row">
-                    <input type="checkbox" id="coding" name="major" value="coding">
-                    <label for="coding">Coding</label>
-                </div>
-                <div class="check-row">
-                    <input type="checkbox" id="english" name="major" value="english">
-                    <label for="english">English</label>
-                </div>
-                <div class="check-row">
-                    <input type="checkbox" id="bio" name="major" value="bio">
-                    <label for="bio">Bio</label>
-                </div>
-            </fieldset>
-        </div>
-        <br>
-        <div class="textarea-container">
-            <label for="message">Your message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea>
-        </div>
+            <div class="form-row">
+                <label for="school">Select a School:</label>
+                <select name="schools" id="school">
+                    <option value="BYU Hawaii">BYU Hawaii</option>
+                    <option value="UH Manoa">UH Manoa</option>
+                    <option value="Chaminade">Chaminade</option>
+                    <option value="Hawaii Pacific">Hawaii Pacific</option>
+                </select>
+            </div>
+            <div class="radio-container">
+                <fieldset>
+                    <legend>Form of Transport</legend>
+                    <div class="spacer"></div>
+                    <label><input type="radio" value="bus" name="radio" id="bus">Bus</label>
+                    <label><input type="radio" value="boat" name="radio" id="boat">Boat</label>
+                    <label><input type="radio" value="car" name="radio" id="car">Car</label>
+                    <label><input type="radio" value="plane" name="radio" id="plane">Plane</label>
+                </fieldset>
+            </div>
+            <div class="form-row">
+                <fieldset>
+                    <legend>Major Selection</legend>
+                    <div class="check-row">
+                        <label><input type="checkbox" id="coding" name="major" value="coding">Coding</label>
+                    </div>
+                    <div class="check-row">
+                        <label><input type="checkbox" id="english" name="major" value="english">English</label>
+                    </div>
+                    <div class="check-row">
+                        <label><input type="checkbox" id="bio" name="major" value="bio">Bio</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="textarea-container">
+                <label for="message">Comments:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </fieldset>
         <div>
             <h2>Questions and Answers</h2>
             <dl>
-                <dt></dt>
-                <dd></dd>
-                <dt></dt>
-                <dd></dd>
-                <dt></dt>
-                <dd></dd>
-                <dt></dt>
-                <dd></dd>
-                <dt></dt>
-                <dd></dd>
+                <dt>What are different ways to style your form?</dt>
+                <dd>You can use css, html tags, :focus tags in the css, and use tags that are specific to inputs and labels such as id, name, type, class, value, and placeholder.</dd>
+                <dt>Why does the professor like to use flex?</dt>
+                <dd>I think I remember him saying that flex is able to move more freely with the window dimensions.</dd>
+                <dt>What makes for a good mobile form?</dt> 
+                <dd>A good mobile form has @Media in the css file. This allows the browser to tell the page to change according to window dimensions. Here you can specify what the page should look like on mobile. It should be easy to click and be scrollable with all the content in the middle.</dd>
             </dl>
         </div>
     </main>

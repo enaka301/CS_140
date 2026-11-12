@@ -1,3 +1,48 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+.form-row, .radio-container{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+.radio-container fieldset{
+    margin-left: 150px;
+}
+.form-row fieldset{
+    margin-left: 150px;
+}
+/* Coloring */
+fieldset{
+    background-color: lightgray;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(94, 92, 92);
+}
+.form-row input[type="submit"]{
+    padding: 10px;
+    background-color: royalblue;
+    color:white;
+}
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    background-color: rgb(198, 141, 222);
+}
+.form-row input:hover{
+    background-color: white;
+}
+@media ONLY screen AND (max-width: 500px){
+    .form-row, .radio-container{
+        flex-direction: column;
+    }
+    .form-row label{
+        text-align: left;
+    }
+}
