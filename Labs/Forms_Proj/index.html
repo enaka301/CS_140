@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Club Sign-ups</legend>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <form action="formprocessing.html" method="get">
+                    <div class="check-row">
+                        <label for="name">Full Name:</label>
+                        <input id="name" type="text" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="check-row">
+                        <label for="mail">Email:</label>
+                        <input id="mail" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="check-row">
+                        <label for="ps">Password:</label>
+                        <input id="ps" type="text" name="password" placeholder="Password">
+                    </div>
+                    <div class="check-row">
+                        <label for="date">Date of Birth:</label>
+                        <input id="date" type="date" name="bdate">
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <div class="spacer"></div>
+                    <div class="check-row">
+                        <fieldset>
+                            <legend>Club Selection</legend>
+                            <label for="club">What club do you want to join?</label>
+                            <select name="clublist" id="club">
+                                <option value="" disabled selected hidden>Select A Club</option>
+                                <option value="Cricket Club">Cricket Club</option>
+                                <option value="CS Club">CS Club</option>
+                                <option value="Japanese Club">Japanese Club</option>
+                                <option value="Hawaii Club">Hawaii Club</option>
+                                <option value="Scuba Club">Scuba Club</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <fieldset>
+                            <legend>Available Days</legend>
+                            <label><input type="radio">M</label>
+                            <label><input type="radio">T</label>
+                            <label><input type="radio">W</label>
+                            <label><input type="radio">TH</label>
+                            <label><input type="radio">F</label>
+                            <label><input type="radio">S</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <fieldset>
+                            <legend>Allergies</legend>
+                            <label><input type="checkbox" name="allergy" id="fish" value="fish">Fish</label>
+                            <label><input type="checkbox" name="allergy" id="dairy" value="dairy">Dairy</label>
+                            <label><input type="checkbox" name="allergy" id="nuts" value="nuts">Nuts</label>
+                            <label><input type="checkbox" name="allergy" id="other" value="other">Other</label>
+                            <div class="textarea-box">
+                                <label for="others">If other, please explain:</label>
+                                <textarea id="others" rows="1" cols="50"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-row">
+                        <fieldset>
+                            <legend>Comments</legend>
+                            <textarea id="comments" rows="4" cols="50"></textarea>
+                        </fieldset>
+                    </div>
+            </fieldset>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </fieldset>
+    </main>
+    <footer>&copy;2026 Enoch</footer>
+</body>
+</html>
