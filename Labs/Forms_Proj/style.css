@@ -1,25 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .spacer{
     width: 150px;
 }
-.form-row, .check-row, .textarea-box{
+.form-row, .check-row{
     margin: 10px 0;
     display: flex;
     gap: 10px;
 }
+.form-row-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row-row label{
+    text-align: right;
+    width: 150px;
+    margin-left: 150px;
+}
 .form-row input{
     border-radius: 7px;
+}
+.form-row label{
+    text-align: right;
+}
+/* coloring */
+.form-row input[type="submit"]{
+    padding: 10px;
+    background-color: rgb(245, 245, 200);
+    color:black;
+}
+.form-row input:not([type="submit"]), select, textarea{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
     background-color: beige;
+}
+textarea{
+    width: 100%;
 }
 .form-row input:hover{
     background-color: rgb(229, 229, 229);
 }
-/* coloring */
-
 fieldset{
     background-color: lightgray;
     border: thin solid black;
-    box-shadow: 3px 3px 3px rgb(94, 92, 92);;
+    box-shadow: 3px 3px 3px rgb(94, 92, 92);
+    min-width: 0;
+}
+@media ONLY screen AND (max-width: 440px){
+    .form-row, .form-row-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row{
+        align-items: center;
+    }
+    .form-row label{
+        align-self: start;
+        width: 90%;
+        max-width: 300px;
+        margin-left: 0;
+        text-align: left;
+    }
+    .form-row input[type="submit"]{
+        width: 100%;
+    }
+    fieldset{
+        margin-bottom: 16px;
+        padding: 12px;
+        min-width: 0;
+    }
+    .form-row input:not([type="submit"]), select, textarea{
+        font-size: 16px;
+        width: 100%;
+    }
 }
