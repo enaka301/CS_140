@@ -9,3 +9,17 @@ body{
     display: flex;
     gap: 10px;
 }
+.form-row input{
+    border-radius: 7px;
+    background-color: beige;
+}
+.form-row input:hover{
+    background-color: rgb(229, 229, 229);
+}
+/* coloring */
+
+fieldset{
+    background-color: lightgray;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(94, 92, 92);;
+}
