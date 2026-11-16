@@ -17,27 +17,29 @@
     </nav>
     <main>
         <div class="form-container">
-            <form action="formprocessing.html" method="get" id="signup-form">
-                <div class="form-row">
-                    <label for="fullname">Full Name:</label>
-                    <input id="fullname" type="text" name="fullname" placeholder="Full Name">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="e-mail" placeholder="Email">
-                </div>
-                <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input id="pass" type="password" name="password" placeholder="Password">
-                </div>
-                <div class="form-row">
-                    <label for="age">Birthdate:</label>
-                    <input id="age" type="date" name="age">
-                </div>
-                <div class="form-row">
-                    <input type="submit">
-                </div>
-            </form>
+            <fieldset>
+                <form action="formprocessing.html" method="get" id="signup-form">
+                    <div class="form-row">
+                        <label for="fullname">Full Name:</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="e-mail" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password:</label>
+                        <input id="pass" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Birthdate:</label>
+                        <input id="age" type="date" name="age">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit">
+                    </div>
+                </form>
+            </fieldset>
         </div>
         <div>
             <h2>Questions and Answers</h2>
@@ -56,11 +58,13 @@
         </div>
         <script>
             document.getElementById('signup-form').addEventListener('submit',function(event){
+                // prevents moving to a different page
                 event.preventDefault();
                 alert("Form Submitted");
 
                 const personname = document.getElementById('fullname').value;
                 const email = document.getElementById('email').value;
+                // Ensure the ID is unique from the name
                 const password = document.getElementById('pass').value;
                 const age = document.getElementById('age').value;
 
