@@ -49,13 +49,13 @@
             <h2>Questions and Answers</h2>
             <dl>
                 <dt>What is AJAX?</dt>
-                <dd>Lorem.</dd>
+                <dd>Ajax is short for asynchronous java script and xml. This is a technique that simplifies building interactive sites.</dd>
                 <dt>Why do you put your JS Code in a separate file?</dt>
-                <dd>Lorem.</dd>
+                <dd>Putting JS Code in a separate file will help with maintenance, organization, and simplicity. No cluttered index.html.</dd>
                 <dt>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</dt>
-                <dd>Lorem.</dd>
+                <dd>The dev tools can spot and pause on errors, display the error location, and show what line the error is on in the file. It shows it in the sources tab on breakpoints. Its a debugger online. Console can also check for errors too by putting alerts or flags to there.</dd>
                 <dt>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</dt>
-                <dd>Lorem.</dd>
+                <dd>The form does use IDs that are the same for JavaScript. Without it, connection errors for data acquisition would occur. IDs that I have for form data are age, birthdate, name, email, and password.</dd>
             </dl>
         </div>
         <script>
@@ -87,6 +87,7 @@
                     birthdate: birthdate
                 };
                 console.log(formData);
+                // js for json message and notifying user of successful submit
                 const xhr = new XMLHttpRequest();
                 xhr.open("GET", "submit.json", true);
                 xhr.setRequestHeader("Content-Tye", "application/json;charset=UTF-8");
