@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JS Form Practice and AJAX</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <div class="form-container">
+            <fieldset>
+                <form action="formprocessing.html" method="get" id="signup-form">
+                    <div class="form-row">
+                        <label for="fullname">Full Name:</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="e-mail" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password:</label>
+                        <input id="pass" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Birthdate:</label>
+                        <input id="age" type="date" name="age">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div>
+            <h2>Questions and Answers</h2>
+            <dl>
+                <dt>What is JavaScript? How did it get its name?</dt>
+                <dd>JavaScript or JS is code used to make websites and pages interactive. It was a scripting tools made for developers on Netscape. Over time, it rebranded as a marketing ploy to JavaScript. Now everyone is confused when Java and JavaScript is mentioned together.</dd>
+                <dt>What are the two ways you can run JavaScript?</dt>
+                <dd>Two ways to run JS is either through a web browser or on a server.</dd>
+                <dt>What is jQuery? Is it still popular today?</dt>
+                <dd>It is a library that helps simplifying HTML. It isn't used a lot but online it sas that t covers 75&percnt;-78&percnt; of sites.</dd>
+                <dt>What is the most popular front-end js library today?</dt>
+                <dd>React is the most popular front-end library right now.</dd>
+                <dt>How does your code prevent the form from being submitted? Why do we need to prevent it?</dt>
+                <dd>event.preventDefault() is code that cancels the browsers attempts to submit. It still submits but won't follow through.</dd>
+            </dl>
+        </div>
+        <script>
+            document.getElementById('signup-form').addEventListener('submit',function(event){
+                // prevents moving to a different page
+                event.preventDefault();
+                alert("Form Submitted");
+
+                const personname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                // Ensure the ID is unique from the name
+                const password = document.getElementById('pass').value;
+                const age = document.getElementById('age').value;
+
+                if (!personname || !email){
+                    alert("You need a name and an email.");
+                    retrn;
+                }
+                if(!age || age < 18){
+                    alert("You need to be over 18.");
+                    return;
+                }
+                const formData = {
+                    name: personname,
+                    email: email,
+                    password: password,
+                    age: age
+                };
+                console.log(formData);
+            });
+        </script>
+    </main>
+    <footer>&copy;2026 Enoch</footer>
+</body>
+</html>
