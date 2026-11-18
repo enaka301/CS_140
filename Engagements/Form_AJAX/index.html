@@ -16,7 +16,7 @@
         <a href="#">Contact</a>
     </nav>
     <main>
-        <div class="form-container">
+        <div class="form-container" id="message">
             <fieldset>
                 <form action="formprocessing.html" method="get" id="signup-form">
                     <div class="form-row">
@@ -28,12 +28,16 @@
                         <input id="email" type="email" name="e-mail" placeholder="Email">
                     </div>
                     <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input id="age" type="number" name="ageyear">
+                    </div>
+                    <div class="form-row">
                         <label for="pass">Password:</label>
                         <input id="pass" type="password" name="password" placeholder="Password">
                     </div>
                     <div class="form-row">
-                        <label for="age">Birthdate:</label>
-                        <input id="age" type="date" name="age">
+                        <label for="bdate">Birthdate:</label>
+                        <input id="bdate" type="date" name="bdate">
                     </div>
                     <div class="form-row">
                         <input type="submit">
@@ -44,16 +48,14 @@
         <div>
             <h2>Questions and Answers</h2>
             <dl>
-                <dt>What is JavaScript? How did it get its name?</dt>
-                <dd>JavaScript or JS is code used to make websites and pages interactive. It was a scripting tools made for developers on Netscape. Over time, it rebranded as a marketing ploy to JavaScript. Now everyone is confused when Java and JavaScript is mentioned together.</dd>
-                <dt>What are the two ways you can run JavaScript?</dt>
-                <dd>Two ways to run JS is either through a web browser or on a server.</dd>
-                <dt>What is jQuery? Is it still popular today?</dt>
-                <dd>It is a library that helps simplifying HTML. It isn't used a lot but online it sas that t covers 75&percnt;-78&percnt; of sites.</dd>
-                <dt>What is the most popular front-end js library today?</dt>
-                <dd>React is the most popular front-end library right now.</dd>
-                <dt>How does your code prevent the form from being submitted? Why do we need to prevent it?</dt>
-                <dd>event.preventDefault() is code that cancels the browsers attempts to submit. It still submits but won't follow through.</dd>
+                <dt>What is AJAX?</dt>
+                <dd>Lorem.</dd>
+                <dt>Why do you put your JS Code in a separate file?</dt>
+                <dd>Lorem.</dd>
+                <dt>How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</dt>
+                <dd>Lorem.</dd>
+                <dt>Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.</dt>
+                <dd>Lorem.</dd>
             </dl>
         </div>
         <script>
@@ -67,12 +69,13 @@
                 // Ensure the ID is unique from the name
                 const password = document.getElementById('pass').value;
                 const age = document.getElementById('age').value;
+                const birthdate = document.getElementById('bdate').value;
 
                 if (!personname || !email){
                     alert("You need a name and an email.");
-                    retrn;
+                    return;
                 }
-                if(!age || age < 18){
+                if(!age || age <= 18){
                     alert("You need to be over 18.");
                     return;
                 }
@@ -80,9 +83,27 @@
                     name: personname,
                     email: email,
                     password: password,
-                    age: age
+                    age: age,
+                    birthdate: birthdate
                 };
                 console.log(formData);
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "submit.json", true);
+                xhr.setRequestHeader("Content-Tye", "application/json;charset=UTF-8");
+                xhr.onreadystatechange = function (){
+                    if(xhr.readyState == 4 && xhr.status == 200){
+                        // Alert('form submitted successfully');
+                        message = document.getElementById('message');
+                        const response = JSON.parse(xhr.responseText);
+                        message.textContent = response.message;
+                        form = document.getElementById('myForm');
+                        form.reset();
+                    }else if(xhr.readyState == 4){
+                        alert('Error submitting form');
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+                alert('Success: ${firstName} ${lastName}');
             });
         </script>
     </main>
