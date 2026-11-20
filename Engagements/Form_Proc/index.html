@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Processing Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Form Processing Practice</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <div class="form-container">
+            <fieldset>
+                <div id="message"></div>
+                <form action="formprocessing.html" method="get" id="signup-form">
+                    <div class="form-row">
+                        <label for="fullname">Full Name:</label>
+                        <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="e-mail" placeholder="Email">
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input id="age" type="number" name="ageyear">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password:</label>
+                        <input id="pass" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <label for="bdate">Birthdate:</label>
+                        <input id="bdate" type="date" name="bdate">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <!-- <script>
+            document.getElementById('signup-form').addEventListener('submit',function(event){
+                // prevents moving to a different page
+                event.preventDefault();
+                alert("Form Submitted");
+
+                const personname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                // Ensure the ID is unique from the name
+                const password = document.getElementById('pass').value;
+                const age = document.getElementById('age').value;
+                const birthdate = document.getElementById('bdate').value;
+
+                if (!personname || !email){
+                    alert("You need a name and an email.");
+                    return;
+                }
+                if(!age || age <= 18){
+                    alert("You need to be over 18.");
+                    return;
+                }
+                const formData = {
+                    name: personname,
+                    email: email,
+                    password: password,
+                    age: age,
+                    birthdate: birthdate
+                };
+                console.log(formData);
+                // js for json message and notifying user of successful submit
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "submit.json", true);
+                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhr.onreadystatechange = function (){
+                    if(xhr.readyState == 4 && xhr.status == 200){
+                        // Alert('form submitted successfully');
+                        message = document.getElementById('message');
+                        const response = JSON.parse(xhr.responseText);
+                        message.textContent = response.message;
+                        form = document.getElementById('signup-form');
+                        form.reset();
+                    }else if(xhr.readyState == 4){
+                        alert('Error submitting form');
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+                // alert('Success: ${firstName} ${lastName}');
+            });
+        </script> -->
+    </main>
+    <footer>&copy;2026 Enoch</footer>
+</body>
+</html>
