@@ -17,28 +17,50 @@
     </nav>
     <main>
             <h2>Audio, Video, Transform, Transition</h2>
-            <audio src="Audio_Video/horse.ogg">Horse Noise</audio>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
+            <div>
+                <h3>Transitions</h3>
+                <a href="#" class="btn">Button</a>
+            </div>
+            <div>
+                <h3>Transform</h3>
+                <figure id="redflower">
+                    <img src="../BackgroundImage/redFlowerSmall.png" alt="Small Red Flower">
+                    <figcaption>A Small Red Flower</figcaption>
+                </figure>
+            </div>
+            <div>
+                <h3>Audio</h3>
+                <audio src="Audio_Video/horse.mp3" controls loop> <!-- adding controls to the tag helps pull up a mp3 bar. loop is self explanatory tag -->
+                    <!-- <source src="Audio_Video/horse.ogg" type="audio/ogg"> -->
+                    Audio isn't displayed
+                    <!-- Sometimes browsers don't support Audio -->
+                </audio>
+            </div>
+            <div>
+                <h3>Video</h3>
+                <video src="Audio_Video/movie.mp4" controls loop>
+                    <!-- <source src="Audio_Video/movie.ogg" type="video/ogg"> -->
+                     Video isn't displayed
+                </video>
+            </div>
+            <div>
+                <h3>YouTube Example</h3>                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xX6eGRykm1g?si=x4sHoU-GINCweFLF" title="YouTube video player" allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
             <div>
                 <h2>Questions and Answers</h2>
                 <dl>
-                    <dt></dt>
-                    <dd></dd>
-                    <dt></dt>
-                    <dd></dd>
-                    <dt></dt>
-                    <dd></dd>
-                    <dt></dt>
-                    <dd></dd>
+                    <dt>What are the positives and negatives of hosting your videos on YouTube?</dt>
+                    <dd>I can choose to have my product being shown without any competitors' ads being shown. I can also host any videos for free. Downside is YouTube will still put links to other competitors.</dd>
+                    <dt>What is the most useful thing you can do with a transform?</dt>
+                    <dd>Most useful thing to do with transform is resizing and relocating a figure without losing parts. Also, the video mentioned transform is used for animations.</dd>
+                    <dt>What is the difference between a transform and a transition?</dt>
+                    <dd>Transform changes the orientation of a figure or element. Transition changes the css properties of an element over time.</dd>
                 </dl>
             </div>
     </main>
-    <footer>&copy;2026 Enoch</footer>
+    <footer>
+        <p>&copy;2026 Enoch</p>
+    </footer>
 </body>
 </html>
